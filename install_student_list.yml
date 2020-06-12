@@ -1,6 +1,6 @@
 ---
 - name: install docker and git
-  hosts: build prod
+  hosts: build preprod prod
   #  gather_facts: False
   become: true
   vars_files:
@@ -25,4 +25,4 @@
   roles:
     - { role: geerlingguy.pip, tags: [ always ] }
     - { role: geerlingguy.docker, tags: [ always ] }
-    - { role: student-list }
+    - { role: fake-backend }
