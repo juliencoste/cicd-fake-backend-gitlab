@@ -1,7 +1,7 @@
 ---
 
-student_list_source_repo: "git@github.com:juliencoste/student-list.git"
-student_list_source_branch: "master"
+fake_backend_source_repo: "git@github.com:juliencoste/fake-backend.git"
+fake_backend_source_branch: "master"
 
 student_list_docker_image_tag: "v1"
 
