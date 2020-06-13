@@ -1,5 +1,6 @@
 pipeline {
     agent none
+    stages {    
         stage('Check yaml syntax') {
             agent { docker { image 'sdesbure/yamllint' } }
             steps {
