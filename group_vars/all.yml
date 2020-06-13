@@ -3,7 +3,7 @@
 fake_backend_source_repo: "git@github.com:juliencoste/fake-backend.git"
 fake_backend_source_branch: "master"
 
-student_list_docker_image_tag: "v1"
+fake_backend_image_tag: "CICD"
 
 home: "/home/centos"
 
