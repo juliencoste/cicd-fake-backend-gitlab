@@ -1,12 +1,5 @@
 pipeline {
     agent none
-    stages {
-        stage('Check bash syntax') {
-            agent { docker { image 'koalaman/shellcheck-alpine:stable' } }
-            steps {
-                script { bashCheck }
-            }
-        }
         stage('Check yaml syntax') {
             agent { docker { image 'sdesbure/yamllint' } }
             steps {
