@@ -100,7 +100,7 @@
   docker_container:
     name: "battle-julo"
     hostname: "battle-julo"
-    image: "{{ docker_hub_login }}/fake-backend:{{fake_backend_docker_image_tag}}"
+    image: "{{ docker_hub_login }}/fake-backend:{{fake_backend_image_tag}}"
     state: "started"
     restart_policy: "always"
     networks:
