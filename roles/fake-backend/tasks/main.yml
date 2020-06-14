@@ -108,7 +108,7 @@
     volumes:
       - "{{ home }}/application-battleboat/battleboat:/etc/backend/static"
     env:
-      DATABASE_HOST: "db-julo"
+      DATABASE_HOST: "db-battleboat"
       DATABASE_PORT: "3306"
       DATABASE_USER: "battleuser"
       DATABASE_PASSWORD: "battlepass"
