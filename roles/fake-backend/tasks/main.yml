@@ -48,7 +48,7 @@
 
 - name: Build image and push it to Docker Hub
   docker_image:
-    path: "{{ home }}/application-battleboat/fake-backend"
+    path: "{{ home }}/application-battleboat"
     name: "{{ docker_hub_login }}/fake-backend"
     push: yes
     tag: "{{ fake_backend_image_tag }}"
@@ -100,7 +100,7 @@
   docker_container:
     name: "battle-julo"
     hostname: "battle-julo"
-    image: "{{ docker_hub_login }}/fake-backend:{{fake_backend_image_tag}}"
+    image: "{{ docker_hub_login }}/fake-backend:{{ fake_backend_image_tag }}"
     state: "started"
     restart_policy: "always"
     networks:
@@ -108,7 +108,7 @@
     volumes:
       - "{{ home }}/application-battleboat/battleboat:/etc/backend/static"
     env:
-      DATABASE_HOST: "db-julo"
+      DATABASE_HOST: "db-battleboat"
       DATABASE_PORT: "3306"
       DATABASE_USER: "battleuser"
       DATABASE_PASSWORD: "battlepass"
