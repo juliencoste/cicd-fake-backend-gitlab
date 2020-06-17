@@ -17,7 +17,6 @@
       - name: Check webservice application production
         uri:
           url: http://{{ 54.197.21.200 }}:{{ 80 }}/health
-          method: GET
         retries: 15
         delay: 5
       tags:
