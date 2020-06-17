@@ -11,10 +11,19 @@
       - name: Check that you can connect to webpage
         uri:
           url: http://{{ 54.197.21.200 }}:{{ 80 }}
+        register: _result
+        until: _result.status == 200
+        retries: 15
+        delay: 5
 
       - name: Check webservice application production
         uri:
           url: http://{{ 54.197.21.200 }}:{{ 80 }}/health
+          method: GET
+        register: _result1
+        until: _result1.status == 200
+        retries: 15
+        delay: 5
       tags:
        - preprod
 
