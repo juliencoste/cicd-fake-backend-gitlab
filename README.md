@@ -2,8 +2,8 @@
 
 ## Description
 
-This repository is used to demonstrate how to use Jenkinsfile to build pipeline
+This repository is used to demonstrate how to gitlab-ci to build pipeline
 
-### ci-cd-fake-backend-jenkins
+### ci-cd-fake-backend-gitlab
 
 chaine d'integration deploiement continue avec fake-backend
