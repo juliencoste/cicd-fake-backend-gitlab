@@ -77,7 +77,7 @@ ansible-lint:
   script:
     - ansible-lint -x 306 install_student_list.yml
 
-build-student-list:
+build-fake-backend:
   <<: *ansible
   stage: build
   script:
@@ -85,7 +85,7 @@ build-student-list:
   only:
     - dev
       
-deploy-student-list-preprod:
+deploy-fake-backend-preprod:
   <<: *ansible
   stage: preprod
   script:
@@ -101,7 +101,7 @@ check-app-preprod:
   only:
     - dev
 
-deploy-student-list-production:
+deploy-fake-backend-production:
   <<: *ansible
   stage: prod
   script:
