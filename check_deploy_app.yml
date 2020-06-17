@@ -11,14 +11,10 @@
       - name: Check that you can connect to webpage
         uri:
           url: http://{{ 54.197.21.200 }}:{{ 80 }}
-        retries: 15
-        delay: 5
 
       - name: Check webservice application production
         uri:
           url: http://{{ 54.197.21.200 }}:{{ 80 }}/health
-        retries: 15
-        delay: 5
       tags:
        - preprod
 
