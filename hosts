@@ -8,6 +8,7 @@ ec2-107-22-142-120.compute-1.amazonaws.com ansible_user=centos ansible_ssh_commo
 [prod]
 ec2-54-198-80-173.compute-1.amazonaws.com ansible_user=centos ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+
 #[all:children]
 #prod
 #preprod
