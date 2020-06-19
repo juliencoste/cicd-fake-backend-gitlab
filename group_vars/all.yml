@@ -1,6 +1,6 @@
 ---
 
-fake_backend_source_repo: "ssh://git@ec2-3-236-86-57.compute-1.amazonaws.com:2222/root/fake-backend.git"
+fake_backend_source_repo: "git@github.com:juliencoste/fake-backend.git"
 #fake_backend_source_repo: "git@github.com:juliencoste/fake-backend.git"
 fake_backend_source_branch: "master"
 fake_backend_image_tag: "CICD"
