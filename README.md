@@ -4,7 +4,7 @@
 
 ## Description
 
-This repository is used to demonstrate how to gitlab-ci to build pipeline.
+This repository is used to demonstrate how to gitlab-ci to build pipeline
 
 ### ci-cd-fake-backend-gitlab
 
